@@ -6,32 +6,18 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Team Lead- Development",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Biofourmis",
-    time: "(Aug, 21 - present)",
-    desp: "<li>Core Backend Lead in Python for the company's flagship, Hospital@Home, responsible for product development</li> <li>Worked on technologies like Python, Flask, PostgresSQL, TimescaleDB, Jenkins, Kubernetes, Athena, S3, etc.</li> <li>Integrated various devices into the H@H program, including, Everion+, VitalsPatch, Omron BP, etc.</li><li>Worked on continuous ECG monitoring and vitals like HR, RR, SpO2, BP, temperatures, etc.</li>",
+    title: "Advanced Application Sr Analyst | Sr Data Scientist",
+    cardImage: "assets/images/experience-page/accenture-logo 2.png",
+    place: "Accenture - AGBG",
+    time: "(April, 20 - present)",
+    desp: "<li>Working on Accenture's AIVI Platform, targeted to run AI services on cloud and edge devices such as Google Coral TPU to automate inspection use cases providing integration with robotics and drone-based solutions.</li><li>Implemented Google's Visual Inspection AI Solution (Assembly & Cosmetic Inspection, AutoML) as well as custom ML Models, combined with Edge TPU & IoT devices for various Industrial use cases.</li><li>MLOPS: Created Deployments for models on Google Kubernetes Engine</li><li>Demand AI Solution: Performed EDA for usecases like Supply chain Logistics and Demand Forecasting. Developed backend APIs in Flask</li><li>Smart Data Solution X: Collaborated in Google's Cloud Smart Solution Data Engine with the goal to simplify ingestion, processing, storing of data in GCP for smart analytics.</li>",
   },
   {
-    title: "Director | CTO | Project Lead",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Lyzer Analytics",
-    time: "(Sep, 20 - Jul, 21)",
-    desp: "<li>Designed & Developed lyzer.io and ilinks.io- eCommerce Sales using Python, NumPy, Flask, LAMP Stack, Symfony, Linux, PimCore, etc.</li><li>Conceptualized and Designed Easy Returns Shopify App</li><li>Performed real-time integrations with various platforms like Shopify, Amazon, Walmart, Flipkart, Quickbooks, Vinculum, Facebook Feed, Google Analytics, Bing Ads, etc.</li><li>Used Flask to compute over 50+ business intelligence & forecasting data points for every product in real-time.</li><li>Optimized the computations by over 93% before caching</li>",
-  },
-  {
-    title: "Full Stack Developer | Project Lead",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "Prime Seller Hub",
-    time: "(Jul, 18 - Jul, 21)",
-    desp:"<li>Implemented PIM/MDM/DAM for the world's leading equestrian client using an open-source project, PimCore.</li><li>System stood as a backend for $5.4 million in direct sales and assisted $8 million of revenue yearly.</li><li>Contributed to the open-source program on Github by removing bugs and building new features.</li><li>Integrated our system with Shopify, Great Plains, Netsuite, Share-a-sale, Rakuten, etc. through REST APIs</li>",
-  },
-  {
-    title: "Software Engineer",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "Sopra Steria",
-    time: "(Jul, 17 - Jul, 18)",
-    desp:"<li>Worked as SAP ABAP Developer.</li><li>Hands-on experience with core programming concepts and introduction to the best industry standards.</li><li>Worked with clients Airbus' Helicopter Division and Euromaster GmbH.</li>",
+    title: "Advanced Application Analyst | Blockchain Developer",
+    cardImage: "assets/images/experience-page/accenture-logo 2.png",
+    place: "Accenture - Blockchain Capability",
+    time: "(Sep, 18 - March, 20)",
+    desp: "<li>Worked in an open source project under Hyperledger Labs, Linux Foundation. Hyperledger Bevel ( A Blockchain Automation Framework) which deploys production-ready DLT platforms in under 30 mins.</li><li>Actively worked on Docker, Ansible, Kubernetes and Helm Charts.</li><li>Implemented various DLT Platforms like Hyperledger Fabric, Hyperledger Indy, Quorum with their end to end deployment automated using Ansible as well as Jenkins Pipeline</li><li>pgraded BAF platform for Hyperledger Fabric from 1.4.4 to 2.2.0. Developed chaincode for Hyperledger Fabric. Implemented new Chaincode Lifecycle 2.0 with support for Java Chaincode</li><li>Created Molecule Testing for Ansible Roles</li>",
   },
 ];
 
@@ -122,10 +108,10 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
   {
-    title: "Digit-Meizu Appathon",
-    subtitle: "Participant",
-    image: "assets/images/experience-page/uplift.png",
-    desp: "Top 15 in All India Digit-Meizu Android Appathon and won 'Meizu M3 Note' Mobile",
+    title: "Hyperledger Bevel",
+    subtitle: "Open Source Contributer",
+    image: "assets/images/experience-page/bevel.jpg",
+    desp: "Open Source Contribution in field of Blockchain Technologies. Active Participation in Development of Hyperledger Bevel",
   },
   
 
@@ -144,7 +130,7 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href="#" class="blog-slider__button">Read More</a>   
+          <a href="https://github.com/hyperledger/bevel" class="blog-slider__button">Read More</a>   
         </div>
       </div>
       `)

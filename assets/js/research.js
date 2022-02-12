@@ -4,156 +4,62 @@ const researchTable = document.querySelector(".main");
 
 const research = [
     {
-        title : "A Batch Normalized Inference Network Keeps the KL Vanishing Away",
-        authors : "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup1",
-        image : "assets/images/research-page/inteferenceNetwork.png",
-        citation: {
-            vancouver: "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu. A Batch Normalized Inference Network Keeps the KL Vanishing Away. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 1",
-        absbox: "absPopup1"
+        title : "Pneumonia Detection (2021)",
+        description : "Tensorflow Model built using NIH Dataset for detecting Pneumonia from chest Xrays. Used Transfer Learning using ResNET, VGG16. Achieved over 83% accuracy.",
+        technologies : "Technologies Used: Python, Numpy, Tensorflow",
+        image : "assets/images/research-page/pneumonia.png",
+        link: "https://github.com/OriginalHybrid/Pneumonia-Detection",
+    },
+    {
+        title : "Project Alina  (2020)",
+        description : "Developed a ChatBot using Generative seq2seq LSTM model",
+        technologies : "Technologies Used: Python, Numpy, Tensorflow, Keras",
+        image : "assets/images/research-page/chatbot.jpg",
+        link: "This is currently left empty and this can be considered as a dummy data 1",
+    },
+    {
+        title : "Auto Car (2020)",
+        description : "Created an autonomous Self Driving Car Model.",
+        technologies : "Technologies Used: Python, Numpy, Tensorflow, Computer Vision",
+        image : "assets/images/research-page/car.png",
+        link: "https://github.com/OriginalHybrid/self-driving-car",
+    },
+    {
+        title : "Continuous pulse rate estimation (2021)",
+        description : " Develop a Pulse Rate Algorithm on the given training data. Then apply the Pulse Rate Algorithm on a Clinical Application and compute more clinically meaningful features and discoverd healthcare trends.",
+        technologies : "Technologies Used: Python, Numpy, Tensorflow",
+        image : "assets/images/research-page/pulse.jpg",
+        link: "https://github.com/OriginalHybrid/Motion-Compensated-Pulse-Rate-Estimation",
+    },
+    {
+        title : "Ashes - A multiplayer FPS game",
+        description : "A multiplayer FPS game with 3 maps developed using Unity gaming engine",
+        technologies : "Technologies Used: unity",
+        image : "assets/images/research-page/Jump.png",
+        link: "This is currently left empty and this can be considered as a dummy data 1",
     },
 
-    {
-        title : "A Call for More Rigor in Unsupervised Cross-lingual Learning",
-        authors : "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup2",
-        image : "assets/images/research-page/crossLingual.png",
-        citation: {
-            vancouver: "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre. A Call for More Rigor in Unsupervised Cross-lingual Learning. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 2",
-        absbox: "absPopup2"
-    },
-
-    {
-        title : "A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks",
-        authors : "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup3",
-        image : "assets/images/research-page/wordRepresentation.png",
-        citation: {
-            vancouver: "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis. A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 3",
-        absbox: "absPopup3"
-    },
-
-    {
-        title : "A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking",
-        authors : "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
-        citebox : "popup4",
-        image : "assets/images/research-page/dialogueState.png",
-        citation: {
-            vancouver: "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou. A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 4",
-        absbox: "absPopup4"
-    },
-
-    {
-        title : "Dual Super-Resolution Learning for Semantic Segmentation",
-        authors : "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup5",
-        image : "assets/images/research-page/semanticSegmentation.png",
-        citation: {
-            vancouver: "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi. Dual Super-Resolution Learning for Semantic Segmentation. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 5",
-        absbox: "absPopup5"
-    },
-
-    {
-        title : "Deep Unfolding Network for Image Super-Resolution",
-        authors : "Zhang, Kai and Van Gool, Luc and Timofte, Radu",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup6",
-        image : "assets/images/research-page/deepNetwork.png",
-        citation: {
-            vancouver: "Zhang, Kai and Van Gool, Luc and Timofte, Radu. Deep Unfolding Network for Image Super-Resolution. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 6",
-        absbox: "absPopup6"
-    },
-
-    {
-        title : "Unsupervised Learning for Intrinsic Image Decomposition From a Single Image",
-        authors : "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup7",
-        image : "assets/images/research-page/imageDecomposition.png",
-        citation: {
-            vancouver: "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng. Unsupervised Learning for Intrinsic Image Decomposition From a Single Image. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 7",
-        absbox: "absPopup7"
-    },
-    {
-        title : "Forward and Backward Information Retention for Accurate Binary Neural Networks",
-        authors : "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "popup8",
-        image : "assets/images/research-page/neuralNetworks.jpg",
-        citation: {
-            vancouver: "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-        },
-        abstract: "This is currently left empty and this can be considered as a dummy data 8",
-        absbox: "absPopup8"
-    }
+    
 ];
 AOS.init();   
 const fillData = () => {
     let output = "";
     research.forEach(
-        ({image, title, authors, conferences, researchYr, citebox, citation, absbox, abstract}) =>
+        ({image, title, description, technologies, link}) =>
         (output +=`
-            <tr data-aos="zoom-in-left"> 
-                <td class="imgCol"><img src="${image}" class="rImg"></td>
+            <tr data-aos="zoom-in-left" >
+            <div> 
+                <td class="imgCol" ><img src="${image}" class="rImg"  style="height: 200px; width:200px"></td>
+                <div>
                 <td class = "researchTitleName">
-                    <div>
-                        <span class="imgResponsive">
-                            <img src="${image}" class="imgRes">
-                        </span>
-                    </div>
                     <a href="#0" class="paperTitle"> ${title} </a> 
-                    <div> ${authors} </div> <div class="rConferences"> ${conferences} 
-                        <div class="researchY">${researchYr}</div>
-                    </div>
-        
-                    <!--CITE BUTTON-->
-                    <div class="d-flex" style="margin-right:5%;">
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${absbox}" aria-expanded="false" aria-controls="${absbox}">
-                            ABSTRACT
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-                        <button class="button button-accent button-small text-right button-abstract " type="button" data-toggle="collapse" data-target="#${citebox}" aria-expanded="false" aria-controls="${citebox}">
-                            CITE
-                        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </div>
-                    <div id="${absbox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
-                        <div class="card-body">
-                            ${abstract}    
-                        </div>
-                    </div>
-                    <div id="${citebox}" class="collapse" aria-labelledby="headingTwo" data-parent=".collapse">
-                        <div class="card-body">
-                            ${citation.vancouver}    
-                        </div>
-                    </div>
+                    <div class="rConferences"> ${description}</div> 
+                    <div class="rConferences" style="padding-bottom: 40px;">${technologies}</div>
+                    <div href=${link} class="button button-accent button-small text-right button-abstract ">Link</div>    
+   
                 </td>
+                </div>
+            </div>
             </tr>`)
         );
     researchTable.innerHTML = output;
